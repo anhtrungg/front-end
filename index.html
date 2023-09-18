@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>F8 - Shop</title>
+    <style>
+        h1 {
+            color: red;
+            font-size: 30px;
+        }
+
+        .box {
+            width: calc(120px * 2);
+            height: 100px;
+            background-color: red;
+        }
+
+        a::after {
+            content: " (" attr(href) + ")";
+        }
+
+        .box::after {
+            content: attr(data-title);
+        }
+    </style>
+    
+    <!-- ALT for change multile line -->
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>
